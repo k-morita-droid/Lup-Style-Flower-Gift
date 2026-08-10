@@ -1225,9 +1225,12 @@ class Component extends DCLogic {
           if (potShip) items.push({ name: "陶器鉢の別送料", amount: potShip, qty: 1 });
           if (ship) items.push({ name: "北海道お届け配送料", amount: ship, qty: 1 });
           fetch("/.netlify/functions/checkout", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ items }) })
-            .then((r) => r.json())
-            .then((d) => { if (d && d.url) { finish(); window.location.href = d.url; } else { finish(); } })
-            .catch(() => finish());
+            .then((r) => r.json().then((d) => ({ ok: r.ok, d })))
+            .then(({ ok, d }) => {
+              if (ok && d && d.url) { finish(); window.location.href = d.url; }
+              else { window.alert("カード決済画面へ移動できませんでした。\n" + ((d && d.error) || "時間をおいてお試しいただくか、銀行振込をご利用ください。")); }
+            })
+            .catch(() => { window.alert("カード決済画面へ移動できませんでした。通信環境をご確認のうえ、再度お試しください。"); });
         } else {
           finish();
         }
