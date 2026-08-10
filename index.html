@@ -397,6 +397,18 @@
             </div>
             <div style="display: flex; flex-direction: column; gap: 22px;">
               <article style="background: #FFFDF9; border: 1px solid #E6DECD; border-radius: 6px; padding: 32px 34px 34px;">
+                <h3 style="margin: 0 0 14px; font-family: 'Shippori Mincho B1', serif; font-size: 19px; letter-spacing: .05em;">化粧蘭のお化粧について</h3>
+                <p style="margin: 0 0 16px; font-size: 14.5px; line-height: 2.05; color: #56504A; max-width: 62em;">パウダーは赤・ピンク・ブルーの3色をご用意しています。絵柄と文字を考慮してお化粧を施しますので、お色の選択は基本的にお任せ願います。【御祝】以外の文字もご用意がありますので、ご希望の場合はお問い合わせください。</p>
+                <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 10px 24px;">
+                  <li style="display: flex; gap: 10px; font-size: 13.5px; line-height: 1.9; color: #6B6459;"><span style="color: #B45B3E;">●</span><span>パウダーは蘭専用のもので、添加しても鑑賞期間に影響はありません。</span></li>
+                  <li style="display: flex; gap: 10px; font-size: 13.5px; line-height: 1.9; color: #6B6459;"><span style="color: #B45B3E;">●</span><span>花に触れると衣類などにパウダーが付着する場合があります。</span></li>
+                  <li style="display: flex; gap: 10px; font-size: 13.5px; line-height: 1.9; color: #6B6459;"><span style="color: #B45B3E;">●</span><span>造花ではありませんので、観賞期間は通常の鉢植え胡蝶蘭（生花）と同じです。</span></li>
+                  <li style="display: flex; gap: 10px; font-size: 13.5px; line-height: 1.9; color: #6B6459;"><span style="color: #B45B3E;">●</span><span>花に霧吹きなどで直接水をかけないでください。</span></li>
+                  <li style="display: flex; gap: 10px; font-size: 13.5px; line-height: 1.9; color: #6B6459;"><span style="color: #B45B3E;">●</span><span>蕾が開いても、絵柄や文字は入っておりません。</span></li>
+                </ul>
+              </article>
+
+              <article style="background: #FFFDF9; border: 1px solid #E6DECD; border-radius: 6px; padding: 32px 34px 34px;">
                 <h3 style="margin: 0 0 14px; font-family: 'Shippori Mincho B1', serif; font-size: 19px; letter-spacing: .05em;">在宅確認</h3>
                 <p style="margin: 0 0 16px; font-size: 14.5px; line-height: 2.05; color: #56504A; max-width: 62em;">個人宅へのお届けの場合、当店から在宅確認をお取りし、お届け希望日時のご要望を伺います。お届け先様のご連絡先は正確にお知らせください。</p>
                 <p style="margin: 0; padding: 16px 18px; background: #F7F4EE; border-left: 2px solid #B45B3E; font-size: 13.5px; line-height: 1.95; color: #6B6459;">※ 法人や店舗であっても、竣工・移転・開店などは受け入れ日時に制限をされている場合があります。事前にご確認のうえ「お届けに関する注意・ご要望事項」にお知らせください。</p>
@@ -540,7 +552,7 @@
           <section style="max-width: 720px; margin: 0 auto; padding: 120px 32px 130px; text-align: center; animation: lsUp .8s cubic-bezier(.22,1,.36,1) both;">
             <p style="margin: 0 0 16px; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px; color: #B45B3E;">Thank you</p>
             <h1 style="margin: 0 0 20px; font-family: 'Shippori Mincho B1', serif; font-weight: 600; font-size: 34px; letter-spacing: .05em;">ご注文を承りました</h1>
-            <p style="margin: 0 0 36px; font-size: 15px; line-height: 2.05; color: #56504A;">ご入力のメールアドレスに確認のご連絡をお送りします。<br>内容の確認後、担当より1営業日以内にご案内いたします。</p>
+            <p style="margin: 0 0 36px; font-size: 15px; line-height: 2.05; color: #56504A;">内容の確認後、担当より1営業日以内にご連絡いたします。<br>銀行振込の場合はご請求書をお送りします。カード決済がお済みでない場合は、決済画面のご案内をお待ちください。</p>
             <a href="#" onClick="{{ goHome }}" style="display: inline-block; border: 1px solid #C0B6A3; padding: 15px 30px; border-radius: 999px; font-size: 14px; letter-spacing: .12em;" style-hover="border-color: #2C4034;">トップへ戻る</a>
           </section>
         </sc-if>
@@ -950,11 +962,11 @@ const CATALOG = [
     desc: "完全受注生産のため、お届け日の5日前までにご注文ください。【御祝】以外の文字もご用意しています。",
     tiers: [{ label: "5本立 春柄", price: 77000 }, { label: "5本立 夏柄", price: 77000 }, { label: "5本立 秋柄", price: 77000 }, { label: "5本立 冬柄", price: 77000 }] },
   { id: "km3", cat: "化粧蘭", name: "ミディ化粧蘭 3本立", en: "Decorated Midi", img: "./km3.jpg",
-    lead: "小ぶりな一鉢に、繊細な彩色を。", spec: "白・ピンク／約H50〜60・W30〜40cm",
+    lead: "小ぶりな一鉢に、繊細な彩色を。", spec: "約H50〜60・W30〜40cm",
     desc: "ミディ胡蝶蘭に手描きの意匠を施した一鉢。四季柄をお選びいただけます。",
     tiers: [{ label: "3本立", price: 23100 }] },
   { id: "km5", cat: "化粧蘭", name: "ミディ化粧蘭 5本立", en: "Decorated Midi", img: "./km5.jpg",
-    lead: "彩色の意匠を、5本立で贈る。", spec: "白・ピンク／約H60〜70・W40〜50cm",
+    lead: "彩色の意匠を、5本立で贈る。", spec: "約H60〜70・W40〜50cm",
     desc: "ミディ化粧蘭の5本立。ラメ（＋1,100円）やラインストーンなどのオプションもお選びいただけます。",
     tiers: [{ label: "白", price: 38500 }, { label: "ピンク", price: 38500 }, { label: "赤リップ", price: 38500 }] },
 
@@ -1043,6 +1055,10 @@ class Component extends DCLogic {
   state = { page: "home", sent: false, ordered: false, cartOpen: false, hokkaido: false, cart: [], cat: "すべて", tag: "none", pot: "basket", wrap: "auto" };
 
   componentDidMount() {
+    try {
+      const q = new URLSearchParams(window.location.search);
+      if (q.get("payment") === "success") { this.setState({ page: "checkout", ordered: true }); }
+    } catch (e) {}
     try {
       const raw = window.localStorage.getItem("lupstyle-cart-v1");
       if (!raw) return;
@@ -1194,11 +1210,27 @@ class Component extends DCLogic {
         fd.append("ラッピング", WRAPNAMES[this.state.wrap] || "おまかせ");
         fd.append("北海道お届け", this.state.hokkaido ? "はい" : "いいえ");
         fd.append("合計金額", YEN(subtotal + ship + tag.price + potTotal + potShip));
+        const isCard = fd.get("お支払い方法") === "クレジットカード";
         try {
           fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams(fd).toString() }).catch(() => {});
         } catch (err) {}
-        this.save(() => ({ ordered: true, cart: [], hokkaido: false, cartOpen: false, tag: "none", pot: "basket", wrap: "auto" }));
-        if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
+        const finish = () => {
+          this.save(() => ({ ordered: true, cart: [], hokkaido: false, cartOpen: false, tag: "none", pot: "basket", wrap: "auto" }));
+          if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+        if (isCard && typeof window !== "undefined" && window.location.hostname !== "localhost") {
+          const items = cart.map((c) => ({ name: c.name + "（" + c.tier + "）", amount: c.price, qty: c.qty }));
+          if (tag.price) items.push({ name: "立札・カード（" + tag.name + "）", amount: tag.price, qty: 1 });
+          if (potTotal) items.push({ name: "鉢カバー（" + potDef.name + "）", amount: potUnit, qty: potQty });
+          if (potShip) items.push({ name: "陶器鉢の別送料", amount: potShip, qty: 1 });
+          if (ship) items.push({ name: "北海道お届け配送料", amount: ship, qty: 1 });
+          fetch("/.netlify/functions/checkout", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ items }) })
+            .then((r) => r.json())
+            .then((d) => { if (d && d.url) { finish(); window.location.href = d.url; } else { finish(); } })
+            .catch(() => finish());
+        } else {
+          finish();
+        }
       },
 
       sent: this.state.sent, notSent: !this.state.sent,
